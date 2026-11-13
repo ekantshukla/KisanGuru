@@ -1,0 +1,41 @@
+# Builds the API, the website and the Docker image on every push, so GitHub shows a ✅ or ❌.
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  api:
+    name: .NET API
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - run: dotnet build backend/KisanGuru.Api/KisanGuru.Api.csproj -c Release
+
+  web:
+    name: Angular website
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend/kisanguru-web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm install --no-audit --no-fund
+      - run: npx ng build --configuration production
+
+  docker:
+    name: Docker image
+    runs-on: ubuntu-latest
+    needs: [ api, web ]
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t kisanguru .
