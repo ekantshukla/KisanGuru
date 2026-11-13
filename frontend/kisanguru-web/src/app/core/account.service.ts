@@ -77,7 +77,7 @@ export class AccountService {
     else this.user.set(null);
   }
 
-  private backLink() { return { url: (WEBSITE_URL || location.origin + '/') + 'account' }; }
+  private backLink() { return { url: (WEBSITE_URL ? WEBSITE_URL.replace(/\/*$/, '/') : document.baseURI) + 'account' }; }
 
   private init() {
     this.fb ??= this.boot().catch(e => { console.warn('Firebase failed to load', e); this.fb = undefined; throw e; });
