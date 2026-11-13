@@ -60,6 +60,24 @@ Free plan में 15 मिनट तक कोई न आए तो app स�
 
 ---
 
+## 2-B. Website को GitHub Pages पर चलाना (API Render पर)
+
+Website `https://ekantshukla.github.io/KisanGuru/` पर खुलेगी और data Render वाली API से लेगी.
+
+1. ऊपर step 2 से API को Render पर deploy करें और उसका पता कॉपी करें, जैसे `https://kisanguru.onrender.com`.
+2. GitHub repo → **Settings → Secrets and variables → Actions → Variables → New repository variable**
+   - Name: `API_URL`
+   - Value: Render वाला पता (आख़िर में `/` न लगाएं)
+3. GitHub repo → **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+4. **Actions → GitHub Pages → Run workflow** (या कोई भी commit करें). 2 से 3 मिनट में साइट चालू.
+5. API Pages वाली साइट को data देने के लिए `https://ekantshukla.github.io` को पहले से allow करती है (`appsettings.json → Cors:AllowedOrigins`).
+   Repo या username बदले तो Render → Environment में `Cors__AllowedOrigins__4` = नया पता जोड़ें.
+6. Firebase login चालू करें तो Authorized domains में `ekantshukla.github.io` भी जोड़ें.
+
+Render का free plan सोता है, इसलिए कुछ देर बाद पहली बार खोलने पर data आने में करीब 30 सेकंड लग सकते हैं.
+
+---
+
 ## 3. अपनी settings (push से पहले या बाद में)
 
 ये settings code में हैं. बदलकर commit और push करें, Render अपने आप दोबारा deploy कर देगा.
