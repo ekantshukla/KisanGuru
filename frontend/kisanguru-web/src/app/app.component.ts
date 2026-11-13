@@ -9,6 +9,7 @@ import { I18nService } from './core/i18n.service';
 import { LocationService } from './core/location.service';
 import { ReminderService } from './core/reminder.service';
 import { BotAvatarComponent } from './shared/bot-avatar.component';
+import { GetAppComponent } from './shared/get-app.component';
 import { HeroBandComponent } from './shared/hero-band.component';
 import { IconComponent } from './shared/icon.component';
 import { FieldsService } from './core/fields.service';
@@ -23,8 +24,9 @@ const KIND_ICON: Record<string, string> = {
 
 @Component({
   selector: 'km-root',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, PlacePickerComponent, BotAvatarComponent, ChatPanelComponent, IconComponent, HeroBandComponent],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, PlacePickerComponent, BotAvatarComponent, ChatPanelComponent, IconComponent, HeroBandComponent, GetAppComponent],
   template: `
+    <km-get-app />
     <header class="topbar">
       <div class="wrap topbar-inner">
         <a routerLink="/" class="brand" (click)="ui.closeAll()">
@@ -141,7 +143,7 @@ const KIND_ICON: Record<string, string> = {
 
     <!-- Floating KisanGuru bot (like VaidikPandit's PanditJi) -->
     @if (!onChatPage()) {
-      @if (!ui.botOpen() && !ui.moreOpen() && !(onHome() && ui.bandVisible())) {
+      @if (!ui.botOpen() && !ui.moreOpen()) {
         <button type="button" class="bot-fab" (click)="openBot()" [attr.aria-expanded]="ui.botOpen()" aria-controls="botwin"
                 [attr.aria-label]="i18n.t('bot.ask')">
           @if (teaser()) { <span class="teaser" role="status">{{ i18n.t('bot.hello') }}</span> }

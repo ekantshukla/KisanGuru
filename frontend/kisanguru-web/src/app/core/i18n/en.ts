@@ -124,14 +124,14 @@ const en: Record<string, string> = {
   "acc.err.phone": "Please enter a 10-digit mobile number.",
   "acc.err.required": "Please fill all fields marked *.",
   "acc.err.generic": "Something went wrong. Please try again.",
-  "bot.ask": "Ask KisanGuru",
+  "bot.ask": "Ask AI KisanGuru",
   "bot.hello": "Namaste! Need help with your farm?",
-  "bot.title": "KisanGuru AI",
+  "bot.title": "AI KisanGuru",
   "bot.online": "AI online",
   "bot.offline": "AI not available",
   "bot.full": "Open full screen",
   "bot.close": "Close",
-  "bot.empty": "Namaste! I am KisanGuru. Ask me about crops, pests, diseases, weather or schemes — type, speak or send a photo.",
+  "bot.empty": "Namaste! I am AI KisanGuru. Ask me about crops, pests, diseases, weather or schemes — type, speak or send a photo.",
   "bot.send": "Send",
   "bot.new": "New chat",
   "bot.typeHere": "Type your question…",
@@ -264,6 +264,11 @@ const en: Record<string, string> = {
   "notif.empty": "Nothing new right now.",
   "notif.settings": "Reminder settings",
   "support.appOnly": "On a phone, the button opens your UPI app (PhonePe, Google Pay, Paytm, BHIM). On a computer, use the UPI ID.",
-  "tab.mandi": "Mandi"
+  "tab.mandi": "Mandi",
+  "getapp.title": "KisanGuru app",
+  "getapp.sub": "Free · opens straight from your home screen",
+  "getapp.btn": "Get app",
+  "getapp.ios": "Tap Share ⎋ in Safari, then “Add to Home Screen”",
+  "getapp.close": "Close"
 };
 export default en;

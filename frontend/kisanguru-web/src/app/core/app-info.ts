@@ -29,3 +29,10 @@ export const SUPPORT = {
   amounts: [10, 20, 50, 100, 200, 500],
   note: 'KisanGuru support'
 };
+
+/**
+ * "Get app" bar shown at the top of the website (not inside the app). Put your Play Store link or a direct
+ * APK link here once the Android app is published (see MOBILE.md); Android visitors are then sent there.
+ * Empty = the bar offers "install to home screen" instead (works in Chrome/Edge on Android and computers, and on iPhone).
+ */
+export const APP_DOWNLOAD_URL: string = '';

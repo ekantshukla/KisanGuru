@@ -123,14 +123,14 @@ const gu: Record<string, string> = {
   "acc.err.phone": "10 અંકનો મોબાઇલ નંબર લખો.",
   "acc.err.required": "* વાળી બધી વિગતો ભરો.",
   "acc.err.generic": "કંઈક ખોટું થયું. ફરી પ્રયાસ કરો.",
-  "bot.ask": "કિસાન ગુરુને પૂછો",
+  "bot.ask": "AI કિસાન ગુરુને પૂછો",
   "bot.hello": "નમસ્તે! ખેતીમાં મદદ જોઈએ છે?",
-  "bot.title": "કિસાન ગુરુ AI",
+  "bot.title": "AI કિસાન ગુરુ",
   "bot.online": "AI ચાલુ છે",
   "bot.offline": "AI હાલ ઉપલબ્ધ નથી",
   "bot.full": "પૂર્ણ સ્ક્રીનમાં ખોલો",
   "bot.close": "બંધ કરો",
-  "bot.empty": "નમસ્તે! હું કિસાન ગુરુ છું. પાક, જીવાત, રોગ, હવામાન કે યોજનાઓ વિશે પૂછો — લખીને, બોલીને કે ફોટો મોકલીને.",
+  "bot.empty": "નમસ્તે! હું AI કિસાન ગુરુ છું. પાક, જીવાત, રોગ, હવામાન કે યોજનાઓ વિશે પૂછો — લખીને, બોલીને કે ફોટો મોકલીને.",
   "bot.send": "મોકલો",
   "bot.new": "નવી વાતચીત",
   "bot.typeHere": "તમારો પ્રશ્ન લખો…",
@@ -263,6 +263,11 @@ const gu: Record<string, string> = {
   "notif.empty": "હાલ કંઈ નવું નથી.",
   "notif.settings": "યાદની સેટિંગ",
   "support.appOnly": "ફોન પર બટન દબાવતાં તમારી UPI ઍપ (PhonePe, Google Pay, Paytm, BHIM) ખુલશે. કમ્પ્યુટર પર UPI આઈડી વાપરો.",
-  "tab.mandi": "મંડી"
+  "tab.mandi": "મંડી",
+  "getapp.title": "કિસાન ગુરુ ઍપ",
+  "getapp.sub": "મફત · સીધું હોમ સ્ક્રીન પરથી ખોલો",
+  "getapp.btn": "ઍપ મેળવો",
+  "getapp.ios": "Safari માં Share ⎋ દબાવો, પછી “Add to Home Screen” પસંદ કરો",
+  "getapp.close": "બંધ કરો"
 };
 export default gu;

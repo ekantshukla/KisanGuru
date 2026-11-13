@@ -123,14 +123,14 @@ const hi: Record<string, string> = {
   "acc.err.phone": "कृपया 10 अंकों का मोबाइल नंबर लिखें।",
   "acc.err.required": "कृपया * वाले सभी खाने भरें।",
   "acc.err.generic": "कुछ गड़बड़ हो गई। कृपया फिर कोशिश करें।",
-  "bot.ask": "किसान गुरु से पूछें",
+  "bot.ask": "AI किसान गुरु से पूछें",
   "bot.hello": "नमस्ते! खेती में मदद चाहिए?",
-  "bot.title": "किसान गुरु AI",
+  "bot.title": "AI किसान गुरु",
   "bot.online": "AI चालू है",
   "bot.offline": "AI अभी उपलब्ध नहीं",
   "bot.full": "पूरी स्क्रीन पर खोलें",
   "bot.close": "बंद करें",
-  "bot.empty": "नमस्ते! मैं किसान गुरु हूं। फसल, कीट, बीमारी, मौसम या योजनाओं के बारे में पूछें — लिखकर, बोलकर या फोटो भेजकर।",
+  "bot.empty": "नमस्ते! मैं AI किसान गुरु हूं। फसल, कीट, बीमारी, मौसम या योजनाओं के बारे में पूछें — लिखकर, बोलकर या फोटो भेजकर।",
   "bot.send": "भेजें",
   "bot.new": "नई बातचीत",
   "bot.typeHere": "अपना सवाल लिखें…",
@@ -263,6 +263,11 @@ const hi: Record<string, string> = {
   "notif.empty": "अभी कोई नई सूचना नहीं।",
   "notif.settings": "याद दिलाने की सेटिंग",
   "support.appOnly": "फ़ोन पर बटन दबाने से आपका UPI ऐप (PhonePe, Google Pay, Paytm, BHIM) खुलेगा। कंप्यूटर पर UPI आईडी इस्तेमाल करें।",
-  "tab.mandi": "मंडी"
+  "tab.mandi": "मंडी",
+  "getapp.title": "किसान गुरु ऐप",
+  "getapp.sub": "मुफ़्त · सीधे होम स्क्रीन से खोलें",
+  "getapp.btn": "ऐप पाएं",
+  "getapp.ios": "Safari में Share ⎋ दबाएं, फिर “Add to Home Screen” चुनें",
+  "getapp.close": "बंद करें"
 };
 export default hi;

@@ -123,14 +123,14 @@ const bn: Record<string, string> = {
   "acc.err.phone": "১০ অঙ্কের মোবাইল নম্বর লিখুন।",
   "acc.err.required": "* চিহ্নিত সব ঘর পূরণ করুন।",
   "acc.err.generic": "কিছু ভুল হয়েছে। আবার চেষ্টা করুন।",
-  "bot.ask": "কিষাণ গুরুকে জিজ্ঞেস করুন",
+  "bot.ask": "AI কিষাণ গুরুকে জিজ্ঞেস করুন",
   "bot.hello": "নমস্কার! চাষে সাহায্য লাগবে?",
-  "bot.title": "কিষাণ গুরু AI",
+  "bot.title": "AI কিষাণ গুরু",
   "bot.online": "AI চালু আছে",
   "bot.offline": "AI এখন পাওয়া যাচ্ছে না",
   "bot.full": "পুরো স্ক্রিনে খুলুন",
   "bot.close": "বন্ধ করুন",
-  "bot.empty": "নমস্কার! আমি কিষাণ গুরু। ফসল, পোকা, রোগ, আবহাওয়া বা প্রকল্প নিয়ে জিজ্ঞেস করুন — লিখে, বলে বা ছবি পাঠিয়ে।",
+  "bot.empty": "নমস্কার! আমি AI কিষাণ গুরু। ফসল, পোকা, রোগ, আবহাওয়া বা প্রকল্প নিয়ে জিজ্ঞেস করুন — লিখে, বলে বা ছবি পাঠিয়ে।",
   "bot.send": "পাঠান",
   "bot.new": "নতুন চ্যাট",
   "bot.typeHere": "আপনার প্রশ্ন লিখুন…",
@@ -263,6 +263,11 @@ const bn: Record<string, string> = {
   "notif.empty": "এখন নতুন কিছু নেই।",
   "notif.settings": "রিমাইন্ডার সেটিং",
   "support.appOnly": "ফোনে বোতাম টিপলে আপনার UPI অ্যাপ (PhonePe, Google Pay, Paytm, BHIM) খুলবে। কম্পিউটারে UPI আইডি ব্যবহার করুন।",
-  "tab.mandi": "বাজার দর"
+  "tab.mandi": "বাজার দর",
+  "getapp.title": "কিষাণ গুরু অ্যাপ",
+  "getapp.sub": "বিনামূল্যে · সরাসরি হোম স্ক্রিন থেকে খুলুন",
+  "getapp.btn": "অ্যাপ নিন",
+  "getapp.ios": "Safari-তে Share ⎋ চাপুন, তারপর “Add to Home Screen” বেছে নিন",
+  "getapp.close": "বন্ধ করুন"
 };
 export default bn;

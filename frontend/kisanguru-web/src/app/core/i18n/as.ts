@@ -123,14 +123,14 @@ const asm: Record<string, string> = {
   "acc.err.phone": "১০ অংকৰ মোবাইল নম্বৰ লিখক।",
   "acc.err.required": "* চিহ্নিত সকলো খালী ঠাই পূৰণ কৰক।",
   "acc.err.generic": "কিবা ভুল হ’ল। আকৌ চেষ্টা কৰক।",
-  "bot.ask": "কিষাণ গুৰুক সোধক",
+  "bot.ask": "AI কিষাণ গুৰুক সোধক",
   "bot.hello": "নমস্কাৰ! খেতিত সহায় লাগে নেকি?",
-  "bot.title": "কিষাণ গুৰু AI",
+  "bot.title": "AI কিষাণ গুৰু",
   "bot.online": "AI চলি আছে",
   "bot.offline": "AI এতিয়া উপলব্ধ নহয়",
   "bot.full": "সম্পূৰ্ণ স্ক্ৰীণত খোলক",
   "bot.close": "বন্ধ কৰক",
-  "bot.empty": "নমস্কাৰ! মই কিষাণ গুৰু। শস্য, পোক, ৰোগ, বতৰ বা আঁচনিৰ বিষয়ে সোধক — লিখি, কৈ বা ফটো পঠিয়াই।",
+  "bot.empty": "নমস্কাৰ! মই AI কিষাণ গুৰু। শস্য, পোক, ৰোগ, বতৰ বা আঁচনিৰ বিষয়ে সোধক — লিখি, কৈ বা ফটো পঠিয়াই।",
   "bot.send": "পঠিয়াওক",
   "bot.new": "নতুন চেট",
   "bot.typeHere": "আপোনাৰ প্ৰশ্ন লিখক…",
@@ -263,6 +263,11 @@ const asm: Record<string, string> = {
   "notif.empty": "এতিয়া নতুন একো নাই।",
   "notif.settings": "সোঁৱৰণীৰ ছেটিং",
   "support.appOnly": "ফোনত বুটাম টিপিলে আপোনাৰ UPI এপ (PhonePe, Google Pay, Paytm, BHIM) খোল খাব। কম্পিউটাৰত UPI আইডি ব্যৱহাৰ কৰক।",
-  "tab.mandi": "বজাৰ"
+  "tab.mandi": "বজাৰ",
+  "getapp.title": "কিষাণ গুৰু এপ",
+  "getapp.sub": "বিনামূলীয়া · পোনপটীয়াকৈ হোম স্ক্ৰীনৰ পৰা খোলক",
+  "getapp.btn": "এপ লওক",
+  "getapp.ios": "Safari-ত Share ⎋ টিপক, তাৰপিছত “Add to Home Screen” বাছক",
+  "getapp.close": "বন্ধ কৰক"
 };
 export default asm;

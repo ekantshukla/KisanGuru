@@ -250,11 +250,12 @@ tbody tr:hover { background: var(--cream); }
 .bot-fab:hover .ring { transform: scale(1.05); }
 .bot-fab .live { position: absolute; right: 2px; bottom: 4px; width: 15px; height: 15px; border-radius: 50%; background: #2fa36b; border: 2.5px solid #fff; }
 .bot-fab .live.off { background: var(--wheat); }
-.fab-label { background: var(--green-800); color: #fff; font: inherit; font-weight: 700; font-size: 0.92rem; padding: 9px 14px; border-radius: 999px; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2); }
+.fab-label { background: var(--green-900, #143a22); color: #fff; font: inherit; font-weight: 700; font-size: 0.95rem; padding: 9px 16px; border-radius: 999px;
+  border: 2px solid var(--wheat, #f2b631); box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); white-space: nowrap; margin-right: -4px; }
 .teaser { background: #fff; color: var(--ink); font: inherit; font-weight: 600; padding: 10px 14px; border-radius: 16px 16px 4px 16px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18); max-width: 220px; text-align: left; animation: pop 0.25s ease-out; }
 @keyframes bob { 50% { transform: translateY(-4px); } }
 @keyframes pop { from { transform: scale(0.8); opacity: 0; } to { transform: none; opacity: 1; } }
-@media (max-width: 560px) { .fab-label { display: none; } }
+@media (max-width: 380px) { .fab-label { font-size: 0.85rem; padding: 7px 12px; } }
 @media (prefers-reduced-motion: reduce) { .bot-fab .ring { animation: none; } }
 .bot-scrim { position: fixed; inset: 0; background: rgba(20, 58, 34, 0.35); z-index: 59; }
 .botwin {
@@ -450,3 +451,14 @@ km-icon.ic { display: inline-flex; width: 24px; height: 24px; flex: none; svg { 
 @media (max-width: 380px) { .support-pill { font-size: .82rem; padding: .38rem .55rem; } }
 @media (max-width: 350px) { .support-pill span { display: none; } }
 @keyframes up { from { transform: translateY(30px); opacity: 0; } to { transform: none; opacity: 1; } }
+
+/* ---------- "Get app" bar at the top of the website (like VaidikPandit) ---------- */
+.getapp { display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: #fff8e6; color: var(--ink, #1d2b21);
+  border-bottom: 1px solid #f0dfb0; font-size: .92rem; }
+.getapp .ga-icon { width: 40px; height: 40px; border-radius: 10px; flex: none; box-shadow: 0 1px 4px rgba(0,0,0,.15); }
+.getapp .ga-txt { flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.25; }
+.getapp .ga-txt strong { font-weight: 700; }
+.getapp .ga-txt small { color: #5b6a5f; font-size: .82rem; }
+.getapp .ga-btn { flex: none; background: var(--green-700, #2e7d4f); color: #fff; border: 0; border-radius: 999px; padding: 8px 16px;
+  font: inherit; font-weight: 700; cursor: pointer; }
+.getapp .ga-x { flex: none; background: none; border: 0; color: #6b776e; font-size: 1rem; padding: 6px; cursor: pointer; }

@@ -6,7 +6,9 @@
     "kisanguru-web": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:component": { "style": "scss" }
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
       },
       "root": "",
       "sourceRoot": "src",
@@ -20,13 +22,29 @@
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "styles": ["src/styles.scss"]
+            "styles": [
+              "src/styles.scss"
+            ],
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+            ]
           },
           "configurations": {
             "production": {
               "budgets": [
-                { "type": "initial", "maximumWarning": "800kB", "maximumError": "2MB" },
-                { "type": "anyComponentStyle", "maximumWarning": "8kB", "maximumError": "32kB" }
+                {
+                  "type": "initial",
+                  "maximumWarning": "800kB",
+                  "maximumError": "2MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "8kB",
+                  "maximumError": "32kB"
+                }
               ],
               "outputHashing": "all"
             },
@@ -44,8 +62,12 @@
             "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
-            "production": { "buildTarget": "kisanguru-web:build:production" },
-            "development": { "buildTarget": "kisanguru-web:build:development" }
+            "production": {
+              "buildTarget": "kisanguru-web:build:production"
+            },
+            "development": {
+              "buildTarget": "kisanguru-web:build:development"
+            }
           },
           "defaultConfiguration": "development"
         }

@@ -123,14 +123,14 @@ const or: Record<string, string> = {
   "acc.err.phone": "୧୦ ଅଙ୍କର ମୋବାଇଲ ନମ୍ବର ଲେଖନ୍ତୁ।",
   "acc.err.required": "* ଚିହ୍ନିତ ସବୁ ସ୍ଥାନ ପୂରଣ କରନ୍ତୁ।",
   "acc.err.generic": "କିଛି ଭୁଲ ହେଲା। ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।",
-  "bot.ask": "କିଷାନ ଗୁରୁଙ୍କୁ ପଚାରନ୍ତୁ",
+  "bot.ask": "AI କିଷାନ ଗୁରୁଙ୍କୁ ପଚାରନ୍ତୁ",
   "bot.hello": "ନମସ୍କାର! ଚାଷରେ ସାହାଯ୍ୟ ଦରକାର କି?",
-  "bot.title": "କିଷାନ ଗୁରୁ AI",
+  "bot.title": "AI କିଷାନ ଗୁରୁ",
   "bot.online": "AI ଚାଲୁ ଅଛି",
   "bot.offline": "AI ଏବେ ଉପଲବ୍ଧ ନାହିଁ",
   "bot.full": "ସମ୍ପୂର୍ଣ୍ଣ ସ୍କ୍ରିନରେ ଖୋଲନ୍ତୁ",
   "bot.close": "ବନ୍ଦ କରନ୍ତୁ",
-  "bot.empty": "ନମସ୍କାର! ମୁଁ କିଷାନ ଗୁରୁ। ଫସଲ, ପୋକ, ରୋଗ, ପାଣିପାଗ ବା ଯୋଜନା ବିଷୟରେ ପଚାରନ୍ତୁ — ଲେଖି, କହି ବା ଫଟୋ ପଠାଇ।",
+  "bot.empty": "ନମସ୍କାର! ମୁଁ AI କିଷାନ ଗୁରୁ। ଫସଲ, ପୋକ, ରୋଗ, ପାଣିପାଗ ବା ଯୋଜନା ବିଷୟରେ ପଚାରନ୍ତୁ — ଲେଖି, କହି ବା ଫଟୋ ପଠାଇ।",
   "bot.send": "ପଠାନ୍ତୁ",
   "bot.new": "ନୂଆ ଚାଟ",
   "bot.typeHere": "ଆପଣଙ୍କ ପ୍ରଶ୍ନ ଲେଖନ୍ତୁ…",
@@ -263,6 +263,11 @@ const or: Record<string, string> = {
   "notif.empty": "ଏବେ କିଛି ନୂଆ ନାହିଁ।",
   "notif.settings": "ସ୍ମାରକ ସେଟିଂ",
   "support.appOnly": "ଫୋନରେ ବଟନ ଦବାଇଲେ ଆପଣଙ୍କ UPI ଆପ (PhonePe, Google Pay, Paytm, BHIM) ଖୋଲିବ। କମ୍ପ୍ୟୁଟରରେ UPI ଆଇଡି ବ୍ୟବହାର କରନ୍ତୁ।",
-  "tab.mandi": "ମଣ୍ଡି"
+  "tab.mandi": "ମଣ୍ଡି",
+  "getapp.title": "କିଷାନ ଗୁରୁ ଆପ୍",
+  "getapp.sub": "ମାଗଣା · ସିଧା ହୋମ୍ ସ୍କ୍ରିନ୍‌ରୁ ଖୋଲନ୍ତୁ",
+  "getapp.btn": "ଆପ୍ ନିଅନ୍ତୁ",
+  "getapp.ios": "Safari ରେ Share ⎋ ଦବାନ୍ତୁ, ତାପରେ “Add to Home Screen” ବାଛନ୍ତୁ",
+  "getapp.close": "ବନ୍ଦ କରନ୍ତୁ"
 };
 export default or;

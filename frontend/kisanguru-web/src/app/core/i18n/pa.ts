@@ -123,14 +123,14 @@ const pa: Record<string, string> = {
   "acc.err.phone": "10 ਅੰਕਾਂ ਦਾ ਮੋਬਾਈਲ ਨੰਬਰ ਲਿਖੋ।",
   "acc.err.required": "* ਵਾਲੇ ਸਾਰੇ ਖਾਨੇ ਭਰੋ।",
   "acc.err.generic": "ਕੁਝ ਗਲਤ ਹੋ ਗਿਆ। ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
-  "bot.ask": "ਕਿਸਾਨ ਗੁਰੂ ਨੂੰ ਪੁੱਛੋ",
+  "bot.ask": "AI ਕਿਸਾਨ ਗੁਰੂ ਨੂੰ ਪੁੱਛੋ",
   "bot.hello": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ! ਖੇਤੀ ਵਿੱਚ ਮਦਦ ਚਾਹੀਦੀ ਹੈ?",
-  "bot.title": "ਕਿਸਾਨ ਗੁਰੂ AI",
+  "bot.title": "AI ਕਿਸਾਨ ਗੁਰੂ",
   "bot.online": "AI ਚਾਲੂ ਹੈ",
   "bot.offline": "AI ਹੁਣ ਉਪਲਬਧ ਨਹੀਂ",
   "bot.full": "ਪੂਰੀ ਸਕਰੀਨ ਤੇ ਖੋਲ੍ਹੋ",
   "bot.close": "ਬੰਦ ਕਰੋ",
-  "bot.empty": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ! ਮੈਂ ਕਿਸਾਨ ਗੁਰੂ ਹਾਂ। ਫ਼ਸਲ, ਕੀੜੇ, ਬਿਮਾਰੀ, ਮੌਸਮ ਜਾਂ ਯੋਜਨਾਵਾਂ ਬਾਰੇ ਪੁੱਛੋ — ਲਿਖ ਕੇ, ਬੋਲ ਕੇ ਜਾਂ ਫੋਟੋ ਭੇਜ ਕੇ।",
+  "bot.empty": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ! ਮੈਂ AI ਕਿਸਾਨ ਗੁਰੂ ਹਾਂ। ਫ਼ਸਲ, ਕੀੜੇ, ਬਿਮਾਰੀ, ਮੌਸਮ ਜਾਂ ਯੋਜਨਾਵਾਂ ਬਾਰੇ ਪੁੱਛੋ — ਲਿਖ ਕੇ, ਬੋਲ ਕੇ ਜਾਂ ਫੋਟੋ ਭੇਜ ਕੇ।",
   "bot.send": "ਭੇਜੋ",
   "bot.new": "ਨਵੀਂ ਗੱਲਬਾਤ",
   "bot.typeHere": "ਆਪਣਾ ਸਵਾਲ ਲਿਖੋ…",
@@ -263,6 +263,11 @@ const pa: Record<string, string> = {
   "notif.empty": "ਹੁਣ ਕੁਝ ਨਵਾਂ ਨਹੀਂ।",
   "notif.settings": "ਯਾਦ ਦਿਵਾਉਣ ਦੀ ਸੈਟਿੰਗ",
   "support.appOnly": "ਫ਼ੋਨ ’ਤੇ ਬਟਨ ਦੱਬਣ ਨਾਲ ਤੁਹਾਡੀ UPI ਐਪ (PhonePe, Google Pay, Paytm, BHIM) ਖੁੱਲ੍ਹੇਗੀ। ਕੰਪਿਊਟਰ ’ਤੇ UPI ਆਈਡੀ ਵਰਤੋ।",
-  "tab.mandi": "ਮੰਡੀ"
+  "tab.mandi": "ਮੰਡੀ",
+  "getapp.title": "ਕਿਸਾਨ ਗੁਰੂ ਐਪ",
+  "getapp.sub": "ਮੁਫ਼ਤ · ਸਿੱਧਾ ਹੋਮ ਸਕ੍ਰੀਨ ਤੋਂ ਖੋਲ੍ਹੋ",
+  "getapp.btn": "ਐਪ ਲਓ",
+  "getapp.ios": "Safari ਵਿੱਚ Share ⎋ ਦਬਾਓ, ਫਿਰ “Add to Home Screen” ਚੁਣੋ",
+  "getapp.close": "ਬੰਦ ਕਰੋ"
 };
 export default pa;
