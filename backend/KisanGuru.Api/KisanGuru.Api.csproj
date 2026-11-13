@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>KisanGuru.Api</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Built-in OpenAPI document generation (.NET 10) -->
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.*" />
+    <!-- Swagger UI only, to browse the built-in /openapi/v1.json document -->
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Tehsil/village lists (LGD) and cached translations ship with the app -->
+    <Content Update="App_Data\**\*" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
