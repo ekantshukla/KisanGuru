@@ -1,0 +1,62 @@
+# Publishes the website to GitHub Pages (https://<user>.github.io/<repo>/) on every push to main.
+# The API runs on Render: set its address once in Settings → Secrets and variables → Actions → Variables → API_URL
+# (for example https://kisanguru.onrender.com). The website then calls that address for all its data.
+name: GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend/kisanguru-web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Point the website at the API
+        env:
+          API_URL: ${{ vars.API_URL }}
+        run: |
+          if [ -z "$API_URL" ]; then
+            echo "::warning::Repository variable API_URL is not set, so the website will have no data. Add it in Settings → Secrets and variables → Actions → Variables."
+          fi
+          sed -i "s|export const API_URL: string = '.*';|export const API_URL: string = '${API_URL}';|" src/app/core/app-info.ts
+          grep "export const API_URL" src/app/core/app-info.ts
+
+      - run: npm install --no-audit --no-fund
+      - run: npx ng build --configuration production --base-href "/${{ github.event.repository.name }}/"
+
+      - name: Make page refresh work on every route
+        run: |
+          cp dist/kisanguru-web/browser/index.html dist/kisanguru-web/browser/404.html
+          touch dist/kisanguru-web/browser/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: frontend/kisanguru-web/dist/kisanguru-web/browser
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
