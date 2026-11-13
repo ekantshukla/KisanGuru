@@ -1,0 +1,14 @@
+# Render.com blueprint: New → Blueprint → pick this repo. Builds the Dockerfile and runs it.
+services:
+  - type: web
+    name: kisanguru
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: Advisory__ApiKey      # Claude API key: AI advice and translation into 10 more languages
+        sync: false
+      - key: Mandi__ApiKey         # data.gov.in API key: live mandi prices
+        sync: false

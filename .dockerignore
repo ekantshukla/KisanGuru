@@ -1,0 +1,12 @@
+**/node_modules
+**/dist
+**/.angular
+**/bin
+**/obj
+**/.vs
+**/.vscode
+**/*.user
+**/android
+.git
+.github
+*.zip

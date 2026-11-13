@@ -1,0 +1,33 @@
+rules_version = '2';
+
+// Security rules for KisanGuru farmer accounts (see ACCOUNTS.md).
+// Paste this whole file into Firebase console > Firestore Database > Rules, then Publish.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() { return request.auth != null; }
+    function me() { return request.auth.uid; }
+    function okText(v, max) { return v is string && v.size() <= max; }
+    function okProfile(d) {
+      return d.role == 'farmer'
+        && okText(d.name, 80)
+        && okText(d.phone, 10)
+        && (d.landAcres == null || (d.landAcres is number && d.landAcres >= 0 && d.landAcres < 100000))
+        && d.crops is list && d.crops.size() <= 20
+        && (!('fields' in d) || (d.fields is list && d.fields.size() <= 60))
+        && (!('plots' in d) || (d.plots is list && d.plots.size() <= 30));
+    }
+
+    // A farmer's profile (name, mobile, farm location, land, crops, My fields): only the farmer can see or change it.
+    match /users/{uid} {
+      allow read: if signedIn() && me() == uid;
+      allow create, update: if signedIn() && me() == uid && okProfile(request.resource.data);
+      allow delete: if false;
+    }
+
+    // Everything else is closed.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

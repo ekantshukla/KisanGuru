@@ -1,0 +1,26 @@
+# .NET
+bin/
+obj/
+.vs/
+*.user
+*.suo
+appsettings.Development.json
+appsettings.Local.json
+
+# Angular / Node
+node_modules/
+dist/
+.angular/
+out-tsc/
+npm-debug.log*
+
+# Android app (made with `npx cap add android`; commit it later if you change native files)
+frontend/kisanguru-web/android/
+
+# Secrets and local files
+.env
+*.env
+*.pfx
+*.keystore
+.DS_Store
+Thumbs.db
